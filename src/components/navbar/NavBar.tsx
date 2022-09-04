@@ -16,8 +16,9 @@ export interface iNav{
     {console.log(navTitles)}
    <div className="navbar navbar-expand-lg bg-light navbar-light">
             <div className="container-fluid">
-                <a href={logoLinks} className="navbar-brand">{logo}</a>
-
+                <div className="logo">
+                  <a href={logoLinks} className="navbar-brand">{logo}</a>
+                </div>
                 <div className="toggle-btn">
                     <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span className="navbar-toggler-icon"></span>

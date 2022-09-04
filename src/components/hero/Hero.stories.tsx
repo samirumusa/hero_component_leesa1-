@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Navbar from  '../src/components/navbar/NavBar'
-import {logoLink, navLinks, navItem} from '../src/components/navbar/Data'
-import { Hero } from './components/hero/Hero';
+import Navbar from  '../navbar/NavBar'
+import {logoLink, navLinks, navItem} from '../navbar/Data'
+import { Hero } from './Hero';
 
 const titles =[{title:navItem.home, active:'active', itemLink:navLinks.home},
 {title:navItem.about, active:'', itemLink:navLinks.about},
@@ -16,7 +16,7 @@ const titles =[{title:navItem.home, active:'active', itemLink:navLinks.home},
 
 ]
 
-function App() {
+export function App() {
   return (
     <div className="App">
      <div className="app_bar">
@@ -34,5 +34,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
