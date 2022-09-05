@@ -34,7 +34,7 @@ export interface iNav{
                         {navTitles.map( (item,index) =>{
                          return(
                             <>
-                            <div className={ navbarToggle ? "item-wrapper-active":"item-wrapper"}>
+                            <div className={ navbarToggle ? "item-wrapper":"item-wrapper-active"}>
                                  <a href={item.itemLink} className={`nav-item nav-link ${item.active}`}>{item.title}</a>
                             </div>
                             </>
